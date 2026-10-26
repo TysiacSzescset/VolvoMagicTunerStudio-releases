@@ -1,2 +1,2 @@
-# VolvoMagicTunerStudio-releases
-VolvoMagicTunerStudio official release repo
+# VolvoMagicTunerStudio - release
+Downloads for Volvo Magic Tuner Studio
