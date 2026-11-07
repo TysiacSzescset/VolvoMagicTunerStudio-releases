@@ -43,7 +43,7 @@ Reading takes around 90-120s depending on the platform.
 Hit _Write flash_ button.  
 Next, in the newly opened window select the file you want to flash.  
 Then _Write flash_ and confirm.
-Leave default settings for standard ECU reading.  
+Leave default settings for standard ECU writing.  
 Writing takes around 2-4mins depending on the platform. 
 
 **WARNING** If you select a file that is not compatible with the car ECU, the application will most likely display a warning. Even so, ensure 100% that you are uploading the correct file for the appropriate platform. Do not flash random files found on the internet—even ones you have modified yourself—unless you are 100% certain of what you are doing. It is very easy to “brick” ECU, and an incorrect or poorly tuned file can even lead to damage to the engine itself.
