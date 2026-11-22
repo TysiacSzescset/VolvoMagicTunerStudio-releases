@@ -3,12 +3,9 @@
 
 ## Supported car platforms:
 
- - [x] **Volvo ME7 P80, P2** - ECU OBD in-car reading/writing.
- - [x] **Volvo ME9 P1** - ECU OBD in-car reading/writing.
- - [x] **Ford ME9** with Volvo 2.5T engine - ECU bench writing/reading - (in-car OBD read/write probably works too - not
-       tested yet).
-
-_If you own Ford 2.5T ME9 car like Focus, Mondeo, S-Max, Kuga and would like to help with in-car tests - let me know :)_
+ - [x] **Volvo ME7 P80, P2** - ECU OBD in-car reading/writing/logging
+ - [x] **Volvo ME9 P1** - ECU OBD in-car reading/writing/logging
+ - [x] **Ford ME9** with Volvo 2.5T engine - ECU bench writing/reading/logging
 
 ## Supported interfaces:
 
@@ -19,7 +16,8 @@ Support for reading/clearing diagnostic trouble codes (DTCs), including detailed
 
 * Writing to the flash memory is free and unrestricted.
 * Reading from the flash memory is encrypted.
-* Please contact me if you wish to decrypt the read content.
+* Logging is encrypted
+* Please contact me if you wish to decrypt the read content/logs.
 
 ## How to use the app
 
@@ -33,7 +31,7 @@ Select you interface and your car platform. Then hit Connect. The Status bar at 
 
 ### Reading flash:  
 Hit _Flash read_ button.  
-Next, in the newly opened window _Read flash_ and confirm.  
+Next, hit _Read flash_ and confirm.  
 Leave default settings for standard ECU reading.  
 Reading takes around 90-120s depending on the platform.
 
@@ -41,7 +39,7 @@ Reading takes around 90-120s depending on the platform.
 
 ### Writing flash:  
 Hit _Write flash_ button.  
-Next, in the newly opened window select the file you want to flash.  
+Next, select the file you want to flash.  
 Then _Write flash_ and confirm.
 Leave default settings for standard ECU writing.  
 Writing takes around 2-4mins depending on the platform. 
@@ -52,7 +50,7 @@ Writing takes around 2-4mins depending on the platform.
 
 ### Reading/clearing errors:
 Hit _Trouble codes_ button.
-A new window will open, in which the automatic identification and scanning of all hi-speed CAN modules will begin.  
+Automatic identification and scanning of all hi-speed CAN modules will begin.  
 Vehicles typically feature two separate CAN networks. A low-speed network handles "internal" modules, such as door control units, the radio, the air conditioning system, airbags, etc. A high-speed network, on the other hand, is responsible for modules located in the engine compartment, for example, the engine control unit (ECU), the transmission control module (TCM), or the ABS system.
 Currently, the application supports only the high-speed network.
 
@@ -63,6 +61,13 @@ You can click on an error to open a window containing additional details and a s
 <img width="501" height="548" alt="image" src="https://github.com/user-attachments/assets/b78c01f7-857b-40b3-babc-5fc68fee1136" />
 
 **WARNING** Before clearing any error codes, be sure to take a screenshot of the codes and their associated freeze frames—that way, you can show them to your tuner!
+
+### Logging:
+Hit the _Live logging_ button. A new window will open. Select a logging definition (files containing the variables to be recorded, prepared for your specific vehicle) and the destination path where the data should be saved.  
+Then, click "Start" to begin logging. Click "Stop" to end the process and save the data to the disk (until this point, the data will not be permanently saved).  
+The gauges can be customized to suit your needs, though the default set should be sufficient for typical use cases.
+
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/405ca481-f174-4185-81fe-7cb277a92934" />
 
 ---
 
